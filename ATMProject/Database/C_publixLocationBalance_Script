@@ -1,0 +1,4 @@
+SELECT sum(balance) AS [Publix's ATM Balance]
+  FROM atm
+ WHERE location_name LIKE 'Publix%';
+

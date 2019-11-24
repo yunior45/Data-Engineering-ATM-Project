@@ -1,0 +1,6 @@
+SELECT atm_id,
+       count(tran_id)
+  FROM ATM_transaction
+       group by atm_id;
+
+

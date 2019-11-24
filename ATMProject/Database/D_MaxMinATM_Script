@@ -1,0 +1,4 @@
+SELECT MAX(Balance) AS [Maximum Balance],
+       MIN(balance) AS [Minimum Balance]
+  FROM atm;
+

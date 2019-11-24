@@ -1,0 +1,5 @@
+create index birthdate_idx on Member(birthdate);
+
+create index atmLocation_idx on ATM(atm_location);
+
+create unique index acctType_idx on AcctType(acct_type);

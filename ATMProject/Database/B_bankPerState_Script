@@ -1,0 +1,4 @@
+SELECT count(bank_name) AS [Bank Count],
+       state AS State
+  FROM Bank
+ GROUP BY state;

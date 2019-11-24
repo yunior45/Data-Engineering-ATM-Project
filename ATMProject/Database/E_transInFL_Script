@@ -1,0 +1,14 @@
+SELECT round( (count(t.tran_id) ) / (
+                                        SELECT count( * ) * 0.01
+                                          FROM ATM_Transaction
+                                    ), 2) AS [FL Trans Percent]
+  FROM ATM_transaction AS t
+       INNER JOIN
+       ATM AS a ON t.atm_id = a.atm_id
+       INNER JOIN
+       Bank AS b ON b.bank_id = a.bank_id
+ WHERE b.state = 'FL';
+
+
+
+
